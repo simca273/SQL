@@ -25,19 +25,30 @@ NOTE: If you are having issues with permissions. And you get error:
 
 -- NOTE: This has been updated from the video to fix issues with encoding
 
-COPY company_dim
-FROM 'C:\Users\admin\OneDrive\Desktop\SQL\csvvv\company_dim.csv'
+COPY company_dim2
+FROM 'C:\csvvv2\company_dim2.csv'
 DELIMITER ',' CSV HEADER;
 
 
-COPY skills_dim
-FROM 'C:\Users\admin\OneDrive\Desktop\SQL\csv_files\skills_dim.csv'
+COPY skills_dim2
+FROM 'C:\csvvv2\skills_dim2.csv'
 DELIMITER ',' CSV HEADER;
 
-COPY job_postings_fact
-FROM 'C:\Users\admin\OneDrive\Desktop\SQL\csv_files\job_postings_fact.csv'
+COPY job_postings_fact2
+FROM 'C:\csvvv2\job_postings_fact2.csv'
 DELIMITER ',' CSV HEADER;
 
-COPY skills_job_dim
-FROM 'C:\Users\admin\OneDrive\Desktop\SQL\csv_files\skills_job_dim.csv'
+COPY skills_job_dim2
+FROM 'C:\csvvv2\skills_job_dim2.csv'
 DELIMITER ',' CSV HEADER;
+
+
+SELECT *
+FROM job_postings_fact2
+LIMIT 100;   
+
+SELECT
+'2024-06-01'::DATE,
+'123'::INTEGER,
+TRUE::BOOLEAN,
+'3.14'::REAL;
