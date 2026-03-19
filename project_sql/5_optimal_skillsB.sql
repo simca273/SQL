@@ -1,0 +1,25 @@
+-- rewriting the same query more concisely
+
+
+    SELECT 
+    skills_dim2.skill_id,
+    skills_dim2.skills,
+    COUNT (skills_job_dim2.job_id) AS demand_count,
+    ROUND (AVG (job_postings_fact2.salary_year_avg), 0) AS avg_salary
+    FROM job_postings_fact2
+    INNER JOIN skills_job_dim2
+        ON job_postings_fact2.job_id = skills_job_dim2.job_id
+    INNER JOIN skills_dim2
+        ON skills_job_dim2.skill_id = skills_dim2.skill_id
+    WHERE
+        job_title_short = 'Data Analyst' AND
+        job_work_from_home = TRUE
+        AND salary_year_avg IS NOT NULL
+    GROUP BY 
+        skills_dim2.skill_id
+    HAVING
+     COUNT (skills_job_dim2.job_id) > 10
+    ORDER BY
+        demand_count DESC,
+        avg_salary DESC
+    LIMIT 25;
