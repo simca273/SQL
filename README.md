@@ -3,11 +3,11 @@
 This  dataset focuses on data-related job market, specifically on data analyst and scientists roles. In this project I will answer questions such as top-paying jobs, demanded skills and where high demand meets high salary in data jobs. The goal was to  navigate the data analyst job market more effectively and find top-payed and in-demand skills, streamlining others work to find optimal jobs. 
 The goal was to  navigate the data job market more effectively and find top-payed and in-demand skills, streamlining others work to find optimal jobs.
 
-See the SQL queries here: [project_sql folder](https://github.com/lukebarousse/SQL_Project_Data_Job_Analysis/blob/main/project_sql)
+See the SQL queries here: [project_sql folder](https://github.com/simca273/SQL/blob/main/project_sql)
 
 See the dataset here: 
 
-It includes  insights on job titles, salaries, locations, essential skills, scheduled type or place of posting.
+- It includes  insights on job titles, salaries, locations, essential skills, scheduled type or place of posting.
 
 **The questions I wanted to answer through my SQL queries were:**
 
