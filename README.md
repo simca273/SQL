@@ -269,10 +269,10 @@ LIMIT 25;
 **Here's a breakdown of the results for top paying skills for Data Scientists:**
 
 - **Rules for using data:** GDPR is not typical software tool, but at high positions it is important to understand GDPR and how to work with data legally and ethically, that is why it is connected to high paying jobs as it is demanded in senior and managing roles. 
-- **Demand for Programming languages:** Top salaries are commanded by scientist skilled in knowing Golang. Indicating industry tendencies for simplifying the procesess by using the Go (Golang) and PHP language and t help with data analysis and visualization tasks efficiently.
-- **Cross-product:** Knowledge of working with Atlassian (Atlassian Analytics, Atlassian Data Lake) platform indicates designed for cross-product data visualization, business intelligence and operational analysis. These tools allow teams to query data from Jira and Confluence creating interactive dashboards to monitor service performance and development velocity.    
+- **Demand for Programming languages:** Top salaries are commanded by scientist skilled in knowing Golang. Indicating industry tendencies for simplifying the procesess by using the Go (Golang) and PHP ? language and t help with data analysis and visualization tasks efficiently.
+- **Demand for Cross-Platform Analytics Tools:** Tools such as Atlassian (Atlassian Analytics, Atlassian Data Lake) indicate a growing need to work with data from multiple systems in one place. This reflects industry trends toward integrating different tools and using dashboards to track performance and support decision-making.
 - **Cloud Computing Expertise:** Familiarity with cloud tools such as (Neo4j, DynamoDB) underscores the growing importance of cloud-based analytics environments based on growing big data and suggesting that cloud proficiency significantly boosts earning potential.
-- **Growth of automation:** The testing tool like Selenium and libraries (TidyVerse, OpenCV). Both show on the growth of shifting to automatization and importance of working with these tools.
+- **Growth of automation:** The testing tool like Selenium and libraries (TidyVerse, OpenCV) used for data manipulation and OpenCV indicate the growing role of image and video data in advanced analytics and AI applications. Both show on the growth of shifting to automatization in data workflows and importance of working with these tools. These trends suggest a shift towards automation, integration of multiple data sources,
 
 
 | Skill | Average salary ($) |
@@ -382,7 +382,7 @@ From the analysis, several general insights emerged:
 1. **Top-Paying Data Scientist Jobs**: The highest-paying remote jobs for data scientist offer a wide range of salaries, the highest at $550,000! They can be found in various industries and have different specializations?
 2. **Skills for Top-Paying Jobs**: High-paying data scientist jobs require advanced proficiency in Python and SQL, suggesting it’s a critical skill for earning a top salary. 
 3. **Most In-Demand Skills**: Python and SQL are also the most demanded skills in the data science job market, making it essential not only for high-paying jobs but for data science roles, indicating initial focus for job seekers.
-4. **Skills with Higher Salaries**: Specialized skills, such as GDPR, Go (Golang), Atlassian, Selenium are associated with the highest average salaries, indicating a premium on niche expertise.
+4. **Skills with Higher Salaries**: Specialized skills, such as GDPR, programming langages (Golang, PHP), Atlassian, Selenium are associated with the highest average salaries, indicating a high apprechiation of knowing legal rules of working with data not such the software part, using cloud as of growing big data and orient itself in upto date automatization and cross tools.
 5. **Optimal Skills for Job Market Value**: Python is again leading in demand and offers for a high average salary, positioning it as the most optimal skill for data scientists to learn to maximize their market value and step into this role.
 
 **Closing Thoughts**
