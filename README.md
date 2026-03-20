@@ -268,11 +268,12 @@ LIMIT 25;
 
 **Here's a breakdown of the results for top paying skills for Data Scientists:**
 
-- **GDPR:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
-- **Programming language:** Top salaries are commanded by analysts skilled in big data technologies (PySpark, Couchbase), machine learning tools (DataRobot, Jupyter), and Python libraries (Pandas, NumPy), reflecting the industry's high valuation of data processing and predictive modeling capabilities.
-- **:** Knowledge in development and deployment tools (GitLab, Kubernetes, Airflow) indicates a crossover between data analysis and engineering, that facilitate automation and efficient data pipeline management.
-- **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
-Libraries
+- **Rules for using data:** GDPR is not typical software tool, but at high positions it is important to understand GDPR and how to work with data legally and ethically, that is why it is connected to high paying jobs as it is demanded in senior and managing roles. 
+- **Demand for Programming languages:** Top salaries are commanded by scientist skilled in knowing Golang. Indicating industry tendencies for simplifying the procesess by using the Go (Golang) and PHP language and t help with data analysis and visualization tasks efficiently.
+- **Cross-product:** Knowledge of working with Atlassian (Atlassian Analytics, Atlassian Data Lake) platform indicates designed for cross-product data visualization, business intelligence and operational analysis. These tools allow teams to query data from Jira and Confluence creating interactive dashboards to monitor service performance and development velocity.    
+- **Cloud Computing Expertise:** Familiarity with cloud tools such as (Neo4j, DynamoDB) underscores the growing importance of cloud-based analytics environments based on growing big data and suggesting that cloud proficiency significantly boosts earning potential.
+- **Growth of automation:** The testing tool like Selenium and libraries (TidyVerse, OpenCV). Both show on the growth of shifting to automatization and importance of working with these tools.
+
 
 | Skill | Average salary ($) |
 | --- | --- |
@@ -378,11 +379,11 @@ Throughout this project I enriched my  SQL knowledge in:
 
 From the analysis, several general insights emerged:
 
-1. **Top-Paying Data Analyst Jobs**: The highest-paying jobs for data analysts that allow remote work offer a wide range of salaries, the highest at $650,000!
-2. **Skills for Top-Paying Jobs**: High-paying data analyst jobs require advanced proficiency in SQL, suggesting it’s a critical skill for earning a top salary.
-3. **Most In-Demand Skills**: SQL is also the most demanded skill in the data analyst job market, thus making it essential for job seekers.
-4. **Skills with Higher Salaries**: Specialized skills, such as SVN and Solidity, are associated with the highest average salaries, indicating a premium on niche expertise.
-5. **Optimal Skills for Job Market Value**: SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for data analysts to learn to maximize their market value.
+1. **Top-Paying Data Scientist Jobs**: The highest-paying remote jobs for data scientist offer a wide range of salaries, the highest at $550,000! They can be found in various industries and have different specializations?
+2. **Skills for Top-Paying Jobs**: High-paying data scientist jobs require advanced proficiency in Python and SQL, suggesting it’s a critical skill for earning a top salary. 
+3. **Most In-Demand Skills**: Python and SQL are also the most demanded skills in the data science job market, making it essential not only for high-paying jobs but for data science roles, indicating initial focus for job seekers.
+4. **Skills with Higher Salaries**: Specialized skills, such as GDPR, Go (Golang), Atlassian, Selenium are associated with the highest average salaries, indicating a premium on niche expertise.
+5. **Optimal Skills for Job Market Value**: Python is again leading in demand and offers for a high average salary, positioning it as the most optimal skill for data scientists to learn to maximize their market value and step into this role.
 
 **Closing Thoughts**
 
