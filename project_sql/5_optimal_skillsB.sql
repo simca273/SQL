@@ -1,6 +1,3 @@
--- rewriting the same query more concisely
-
-
     SELECT 
     skills_dim2.skill_id,
     skills_dim2.skills,
@@ -12,7 +9,7 @@
     INNER JOIN skills_dim2
         ON skills_job_dim2.skill_id = skills_dim2.skill_id
     WHERE
-        job_title_short = 'Data Analyst' AND
+        job_title_short = 'Data Scientist' AND
         job_work_from_home = TRUE
         AND salary_year_avg IS NOT NULL
     GROUP BY 
