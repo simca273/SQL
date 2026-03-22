@@ -1,11 +1,3 @@
-/*
-  Answer: What are the top skills based on salary?
-  - Look at the average salary associated with each
-  - Focuses on roles specified salaries, regardless
-    - Why? It reveals how different skills impact salary 
-    helps identify the most financially rewarding skills   
-*/
-
 SELECT 
   skills,
   ROUND (AVG (salary_year_avg), 0) AS average_salary
@@ -15,7 +7,7 @@ INNER JOIN skills_job_dim2
 INNER JOIN skills_dim2
     ON skills_job_dim2.skill_id = skills_dim2.skill_id
 WHERE
-    job_title_short = 'Data Analyst' 
+    job_title_short = 'Data Scientist' 
     AND salary_year_avg IS NOT NULL
     AND job_work_from_home = TRUE
 GROUP BY 
@@ -24,5 +16,3 @@ ORDER BY
     average_salary DESC
 LIMIT 25;
 
-
---can ask chatqpt 
