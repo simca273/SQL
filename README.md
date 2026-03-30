@@ -1,11 +1,10 @@
 **Introduction**
 
-This  dataset focuses on data-related job market, specifically on data analyst and scientists roles. In this project I will answer questions such as top-paying jobs, demanded skills and where high demand meets high salary in data jobs. The goal was to  navigate the data analyst job market more effectively and find top-payed and in-demand skills, streamlining others work to find optimal jobs. 
-The goal was to  navigate the data job market more effectively and find top-payed and in-demand skills, streamlining others work to find optimal jobs.
+This  dataset focuses on data-related job market, specifically on data scientists roles. This project will answer questions such as top-paying jobs, demanded skills and where high demand meets high salary in data jobs. The goal was to navigate the data scientists job market more effectively and find top-payed and in-demand skills, streamlining others work to find optimal jobs. 
 
 See the SQL queries here: [project_sql folder](https://github.com/simca273/SQL/blob/main/project_sql)
 
-See the dataset here: 
+About the dataset: It provides real-world information on data jobs market in 2023:
 
 - It includes  insights on job titles, salaries, locations, essential skills, scheduled type or place of posting.
 
@@ -29,13 +28,13 @@ For my dive into the data job market, I used several key tools:
 
 **The Analysis**
 
-Each query of this project aimed at looking into specific aspects of the data analyst and scientist job market in order to understant its current trends. 
+Each query of this project aimed at looking into specific aspects of the data scientist job market in order to understant its current trends. 
 
 Here’s how I approached each question:
 
-**1.A Top Paying Data Analyst Jobs**
+**1. Top Paying Data Scientist Jobs**
 
-To identify the highest-paying roles, I filtered data analyst and positions by average yearly salary and location, focusing on remote jobs. 
+To identify the highest-paying roles, I filtered data scientist positions by average yearly salary and location, focusing on remote jobs. 
 This query highlights the high paying opportunities in the field.
 
 ```sql
@@ -52,7 +51,7 @@ FROM
 LEFT JOIN company_dim2
     ON job_postings_fact2.company_id = company_dim2.company_id
 WHERE
-    job_title_short = 'Data Analyst' AND
+    job_title_short = 'Data Scientist' AND
     job_location = 'Anywhere' AND
     salary_year_avg IS NOT NULL
 ORDER BY
@@ -60,22 +59,11 @@ ORDER BY
 LIMIT 20
 ```
 
-
-**1. Top Paying Data Scientist Jobs**
-
   Here's the breakdown of the top data scientist jobs in 2023:
 
-- **Wide Salary Range:** The top 20 paying data scientist jobs move in the range $300,000 to 550,000. In companison with data analyst roles it shows that there is bigger range of salaries for data analysts with a bigger (strop) top 1 salary. It indicates significant salary potencial in this field?
+- **Wide Salary Range:** The top 20 paying data scientist jobs move in the range $300,000 to 550,000. It shows that there is big range of salaries. It indicates significant salary potencial in this field.
 - **Diverse Employers:** Companies like Sellby Jennings, Algo Capital Group, Demandbase or Reddit are among those offering high salaries. It shows interest in this role and its valuability across different industries.
 - **Job Title Variety:** There's a high diversity in job titles, from Data Scientist to Director of Data Science, reflecting varied roles and specializations within data science.
-
-
-**Average Salary for Top 10 Paying Data Scientist Jobs in 2023.**
-
-**Low Sample and range:** In Germany there is 90,931 - 171,121 for Data Scientists. It shows on low sample in the dataset, which can drew the results.
-**Lower Salary Potential:** Yet there is clear pattern that remote jobs have higher salary potential.
-**Diverse Employers:** Between the companies show up famous German companies with 
-
 
 ![Dashboard](Images/Ds%20Jobs.png)
 
@@ -101,7 +89,7 @@ WITH top_paying_jobs AS (
     LEFT JOIN company_dim2  
         ON job_postings_fact2.company_id = company_dim2.company_id
     WHERE
-        job_title_short = 'Data Analyst' AND
+        job_title_short = 'Data Scientist' AND
         job_location = 'Anywhere' AND
         salary_year_avg IS NOT NULL
     ORDER BY
@@ -129,8 +117,7 @@ Most demanded skills for the top 10 highest paying data scientist jobs in 2023:
 
 ![Dashboard](Images/Ds%20Skills.png)
 
-
-
+**In-demand skills for Data Scientists**
 
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 
@@ -144,7 +131,7 @@ INNER JOIN skills_job_dim2
 INNER JOIN skills_dim2
     ON skills_job_dim2.skill_id = skills_dim2.skill_id
 WHERE
-    job_title_short = 'Data Analyst' AND
+    job_title_short = 'Data Scientist' AND
     job_work_from_home = TRUE
 GROUP BY 
     skills
@@ -156,8 +143,9 @@ LIMIT 5;
 **Here's the breakdown of the most demanded skills for data scientists in 2023:**
 
 - **Python** and **SQL** are fundamental skills for most data scientists. It emphase the need for strong ability to extract data from databases and automating and modeling the data.
-- **Other programming** languages are also relevant, but R is less widely spread.
-- **Visualization Tools** like **Tableau for vizualizing insights and Cloud AWS are also important for storing large sets of data on cloud platform.**
+- **Other programming languages** are also relevant, but R is less widely spread than Python.
+- **Visualization Tools** like **Tableau** for vizualizing insights.
+- **Cloud storage** **Cloud AWS** is also important for storing large sets of data on cloud platform.
 
 | Skill | Demand count |
 | --- | --- |
@@ -183,7 +171,7 @@ INNER JOIN skills_job_dim2
 INNER JOIN skills_dim2
     ON skills_job_dim2.skill_id = skills_dim2.skill_id
 WHERE
-    job_title_short = 'Data Analyst' 
+    job_title_short = 'Data Scientist' 
     AND salary_year_avg IS NOT NULL
     AND job_work_from_home = TRUE
 GROUP BY 
@@ -195,6 +183,7 @@ LIMIT 25;
 
 **Here's a breakdown of the results for top paying skills for Data Scientists:**
 
+?
 - **Rules for using data:** GDPR is not typical software tool, but at high positions it is important to understand GDPR and how to work with data legally and ethically, that is why it is connected to high paying jobs as it is demanded in senior and managing roles. 
 - **Demand for Programming languages:** Top salaries are commanded by scientist skilled in knowing Golang. Indicating industry tendencies for simplifying the procesess by using the Go (Golang) and PHP ? language and t help with data analysis and visualization tasks efficiently.
 - **Demand for Cross-Platform Analytics Tools:** Tools such as Atlassian (Atlassian Analytics, Atlassian Data Lake) indicate a growing need to work with data from multiple systems in one place. This reflects industry trends toward integrating different tools and using dashboards to track performance and support decision-making.
@@ -231,7 +220,7 @@ FROM job_postings_fact2
 INNER JOIN skills_job_dim2 ON job_postings_fact2.job_id = skills_job_dim2.job_id
 INNER JOIN skills_dim2 ON skills_job_dim2.skill_id = skills_dim2.skill_id
 WHERE
-    job_title_short = 'Data Analyst'
+    job_title_short = 'Data Scientist'
     AND salary_year_avg IS NOT NULL
     AND job_work_from_home = TRUE
 GROUP BY
@@ -246,6 +235,7 @@ LIMIT 25;
 ```
 Here's a breakdown of the most optimal skills for Data Scientists in 2023:
 
+?
 - **High-Demand Programming Language:** Python and its libraries strongly stand out for its high demand, with demand counts of 763. Its average salary is around $143,828, indicating that proficiency in Python is for data scientists widely used and valued.
 - - **Business Intelligence and Visualization Tools:** Tableau with demand counts of 219 and average salaries around $146,970 highlights the critical role of data visualization and business intelligence in delivering actionable insights from data.
 - **Cloud Technologies:** Skills in using AWS or Snowflake show significant demand with average salaries valued just as the main programming language, pointing towards the growing importance of cloud platforms and need for storing big data.
@@ -253,11 +243,12 @@ Here's a breakdown of the most optimal skills for Data Scientists in 2023:
 
 **What I Learned**
 
-Throughout this project I enriched my  SQL knowledge in:
+Throughout this project I enriched my SQL knowledge in:
 
+?
 - **Complex Query Crafting:**
-- Learned how to use basic up to intermediate sql commands.
-- Extract data from PostGres database, connect it to VS Code and with SQL comands.
+-- Learned how to use intermediate SQL commands.
+-- Extracted data from PostGres database, connect it to VS Code and with SQL comands.
 - **Data Aggregation:** Got to use GROUP BY command in practical project and get more comfatable with using it and aggregate functions like COUNT() and AVG() into my data-summarizing.
 - **Combine Rows:** Included combining data from two different tables to answer questions for which the necesary info wasnt in one table by using JOINs.
 - **Analytical Skills:** Leveled up my analysis skills by turning questions into SQL queries based on which I executed insights for answering the specific questions.
@@ -268,6 +259,7 @@ Throughout this project I enriched my  SQL knowledge in:
 
 From the analysis, several general insights emerged:
 
+?
 1. **Top-Paying Data Scientist Jobs**: The highest-paying remote jobs for data scientist offer a wide range of salaries, the highest at $550,000! They can be found in various industries and have different specializations?
 2. **Skills for Top-Paying Jobs**: High-paying data scientist jobs require advanced proficiency in Python and SQL, suggesting it’s a critical skill for earning a top salary. 
 3. **Most In-Demand Skills**: Python and SQL are also the most demanded skills in the data science job market, making it essential not only for high-paying jobs but for data science roles, indicating initial focus for job seekers.
@@ -276,4 +268,4 @@ From the analysis, several general insights emerged:
 
 **Closing Thoughts**
 
-This project provided valuable insights into the data analyst and data scientist job market. The findings can help aspiring data analyst and scientists understand the most valuable skills to learn for themselves. It can help them compare the difference between remote positions in situation they are deciding on the location type preferences. It is important to follow the trends as the data-related jobs market is constantly changing.
+This project provided valuable insights into the data scientist job market. The findings can help aspiring data scientists understand the most valuable skills to learn for themselves. It can help them compare the difference between remote positions in situation they are deciding on the location type preferences. It is important to follow the trends as the data-related jobs market is constantly changing.
