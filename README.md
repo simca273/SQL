@@ -252,9 +252,7 @@ Throughout this project I enriched my SQL knowledge in:
 - **Combine Rows:** Combined data from multiple tables using SQL JOIN operations to answer questions where the required information wasn´t available in a single table.
 - **Analytical Skills:** Leveled up my analysis skills by turning questions into SQL queries based on which I executed insights for answering the specific questions.
 
-**Conclusions**
-
-**Insights**
+**Key Insights**
 
 From the analysis, several general insights emerged:
 
