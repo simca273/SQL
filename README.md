@@ -4,8 +4,9 @@ This  dataset focuses on data-related job market, specifically on data scientist
 
 See the SQL queries here: [project_sql folder](https://github.com/simca273/SQL/blob/main/project_sql)
 
-About the dataset: It provides real-world information on data jobs market in 2023:
+About the dataset: 
 
+- It provides real-world information on data jobs market in 2023.
 - It includes  insights on job titles, salaries, locations, essential skills, scheduled type or place of posting.
 
 **The questions I wanted to answer through my SQL queries were:**
@@ -21,7 +22,7 @@ About the dataset: It provides real-world information on data jobs market in 202
 For my dive into the data job market, I used several key tools:
 
 - **SQL:** Allowing me to query the database and see critical insights.
-- **PostgreSQL:** Database management system.    --
+- **PostgreSQL:** A database system that stores data and enables its efficient management.
 - **Visual Studio Code:** I used this code editor for executing SQL queries.
 - **Git & GitHub:** For sharing my project with others.
 
@@ -34,7 +35,7 @@ Here’s how I approached each question:
 
 **1. Top Paying Data Scientist Jobs**
 
-To identify the highest-paying roles, I filtered data scientist positions by average yearly salary and location, focusing on remote jobs. 
+To identify the highest-paying roles, I filtered data scientist jobs by average yearly salary and location, focusing on remote jobs. 
 This query highlights the high paying opportunities in the field.
 
 ```sql
@@ -70,12 +71,12 @@ LIMIT 20
 - **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
 - **Data Organization:** Sorted job titles by descending salary for improved readability.
-- **Insights Gained:** This enables quick identification of salary trends, noting that Data Scientists are higher payed that directors.?
+- **Insights Gained:** This enables quick identification of salary trends, noting that senior data specialist roles belong between the highest-paid ones, as well as leadership roles. This highlights the importance of both technical skills and managerial responsibility in the field.
 
 
 **2. Skills for Top Paying Jobs**
 
-To understand what skills are required for the top-paying jobs, I joined the job postings table with the skills data, which  skills employers apprechiate the most.
+To understand what skills are required for the top-paying jobs, I joined the job postings table with the skills data.
 
 ```jsx
 WITH top_paying_jobs AS (   
@@ -113,7 +114,7 @@ Most demanded skills for the top 10 highest paying data scientist jobs in 2023:
 
 - **Python** is leading with a bold count of 4.
 - **SQL** follows closely with a count of 3.
-- **Pytorch, Java Aws, Tensorflow and Spark** is also between more in demand skills, with a count of 2.
+- **Pytorch, Java Aws, Tensorflow** and **Spark** is also between more in demand skills, with a count of 2.
 
 ![Dashboard](Images/Ds%20Skills.png)
 
@@ -145,7 +146,7 @@ LIMIT 5;
 - **Python** and **SQL** are fundamental skills for most data scientists. It emphase the need for strong ability to extract data from databases and automating and modeling the data.
 - **Other programming languages** are also relevant, but R is less widely spread than Python.
 - **Visualization Tools** like **Tableau** for vizualizing insights.
-- **Cloud storage** **Cloud AWS** is also important for storing large sets of data on cloud platform.
+- **Cloud storage** **Cloud AWS** is important for storing large sets of data on cloud platform.
 
 | Skill | Demand count |
 | --- | --- |
@@ -245,12 +246,11 @@ Here's a breakdown of the most optimal skills for Data Scientists in 2023:
 
 Throughout this project I enriched my SQL knowledge in:
 
-?
 - **Complex Query Crafting:**
 -- Learned how to use intermediate SQL commands.
--- Extracted data from PostGres database, connect it to VS Code and with SQL comands.
-- **Data Aggregation:** Got to use GROUP BY command in practical project and get more comfatable with using it and aggregate functions like COUNT() and AVG() into my data-summarizing.
-- **Combine Rows:** Included combining data from two different tables to answer questions for which the necesary info wasnt in one table by using JOINs.
+-- Extracted data from a PostgreSQL database using SQL in Visual Studio Code.
+- **Data Aggregation:** Applied GROUP BY command in practical project and aggregate functions like COUNT() and AVG() into my data-summarizing.  
+- **Combine Rows:** Combined data from multiple tables using SQL JOIN operations to answer questions where the required information wasn´t available in a single table.
 - **Analytical Skills:** Leveled up my analysis skills by turning questions into SQL queries based on which I executed insights for answering the specific questions.
 
 **Conclusions**
@@ -259,12 +259,11 @@ Throughout this project I enriched my SQL knowledge in:
 
 From the analysis, several general insights emerged:
 
-?
-1. **Top-Paying Data Scientist Jobs**: The highest-paying remote jobs for data scientist offer a wide range of salaries, the highest at $550,000! They can be found in various industries and have different specializations?
+1. **Top-Paying Data Scientist Jobs**: The highest-paying remote jobs for data scientist offer a wide range of salaries, the highest at $550,000. The role can be found in various industries.
 2. **Skills for Top-Paying Jobs**: High-paying data scientist jobs require advanced proficiency in Python and SQL, suggesting it’s a critical skill for earning a top salary. 
-3. **Most In-Demand Skills**: Python and SQL are also the most demanded skills in the data science job market, making it essential not only for high-paying jobs but for data science roles, indicating initial focus for job seekers.
-4. **Skills with Higher Salaries**: Specialized skills, such as GDPR, programming langages (Golang, PHP), Atlassian, Selenium are associated with the highest average salaries, indicating a high apprechiation of knowing legal rules of working with data not such the software part, using cloud as of growing big data and orient itself in upto date automatization and cross tools.
-5. **Optimal Skills for Job Market Value**: Python is again leading in demand and offers for a high average salary, positioning it as the most optimal skill for data scientists to learn to maximize their market value and step into this role.
+3. **Most In-Demand Skills**: Python and SQL are among the most in-demand skills in the data science job market. They are essential not only for high-paying roles but for positions across all levels, making them a key starting point for job seekers.
+4. **Skills with Higher Salaries**: Specialized skills, such as knowing GDPR, programming langages (Golang, PHP), Atlassian, Selenium are associated with the highest average salaries. Indicating a high apprechiation of understanding legal rules of working with data, working in cloud as of growing big data and orient itself in upto date automatization and cross tools.
+5. **Optimal Skills for Job Market Value**: Python stands out as the most valuable skill, combining high demand with a strong average salary. This makes it a key skill for aspiring data scientists to learn in order to maximize their market value and enter the field.
 
 **Closing Thoughts**
 
