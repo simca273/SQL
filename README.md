@@ -247,9 +247,10 @@ Throughout this project I enriched my SQL knowledge in:
 
 - **Complex Query Crafting:**
 -- Learned how to use intermediate SQL commands.
+
 -- Extracted data from a PostgreSQL database using SQL in Visual Studio Code.
 - **Data Aggregation:** Applied GROUP BY command in practical project and aggregate functions like COUNT() and AVG() into my data-summarizing.  
-- **Combine Rows:** Combined data from multiple tables using SQL JOIN operations to answer questions where the required information wasn´t available in a single table.
+- **Combine Rows:** Combined data from multiple tables using SQL JOIN operations to answer questions where the required information was not available in a single table.
 - **Analytical Skills:** Leveled up my analysis skills by turning questions into SQL queries based on which I executed insights for answering the specific questions.
 
 **Key Insights**
