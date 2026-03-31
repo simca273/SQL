@@ -184,8 +184,7 @@ LIMIT 25;
 
 **Here's a breakdown of the results for top paying skills for Data Scientists:**
 
-?
-- **Rules for using data:** GDPR is not typical software tool, but at high positions it is important to understand GDPR and how to work with data legally and ethically, that is why it is connected to high paying jobs as it is demanded in senior and managing roles. 
+- **Rules for using data:** Understanding GDPR is essential, especially in senior and managerial roles. Although it is not a technical tool, knowledge of data regulations makes it a valuable competency associated with higher-paying positions, where responsibility for knowledge of handeling data legally and ethically is critical.
 - **Demand for Programming languages:** Top salaries are commanded by scientist skilled in knowing Golang. Indicating industry tendencies for simplifying the procesess by using the Go (Golang) and PHP ? language and t help with data analysis and visualization tasks efficiently.
 - **Demand for Cross-Platform Analytics Tools:** Tools such as Atlassian (Atlassian Analytics, Atlassian Data Lake) indicate a growing need to work with data from multiple systems in one place. This reflects industry trends toward integrating different tools and using dashboards to track performance and support decision-making.
 - **Cloud Computing Expertise:** Familiarity with cloud tools such as (Neo4j, DynamoDB) underscores the growing importance of cloud-based analytics environments based on growing big data and suggesting that cloud proficiency significantly boosts earning potential.
@@ -236,11 +235,11 @@ LIMIT 25;
 ```
 Here's a breakdown of the most optimal skills for Data Scientists in 2023:
 
-?
-- **High-Demand Programming Language:** Python and its libraries strongly stand out for its high demand, with demand counts of 763. Its average salary is around $143,828, indicating that proficiency in Python is for data scientists widely used and valued.
-- - **Business Intelligence and Visualization Tools:** Tableau with demand counts of 219 and average salaries around $146,970 highlights the critical role of data visualization and business intelligence in delivering actionable insights from data.
-- **Cloud Technologies:** Skills in using AWS or Snowflake show significant demand with average salaries valued just as the main programming language, pointing towards the growing importance of cloud platforms and need for storing big data.
-- **Machine Learning Technologies:** Tensorflow and PyTorch are highly valuable AI frameworks in data science with average salary between  $151,536 and $152,603 and are widely used in companies. It is showing at growing demand for implemeting AI into processes and being very highly valued.
+
+- **High-Demand Programming Language:** Python and its libraries strongly stand out for its high demand, with demand counts of 763. Its average salary is around $143,828, indicating that proficiency in Python is in data scientists roles widely used and valued.
+- **Business Intelligence and Visualization Tools:** Tools such as Tableau, with a demand count of 219 and an average salary of approximately $146,970, highlight the importance of data visualization and business intelligence in transforming raw data into insights.
+- **Cloud Technologies:** Cloud Technologies: Knowledge of platforms such as AWS and Snowflake shows strong demand, with average salaries comparable to those of knowing the core programming skills. This highlights the growing importance of cloud technologies for managing, storing, and processing large data.
+- **Machine Learning Technologies:** TensorFlow and PyTorch are highly valuable frameworks in data science, with average salaries between $151,536 and $152,603. Their widely spread use in companies points at the growing demand and increasing value of artificial intelligence in business processes.
 
 **What I Learned**
 
